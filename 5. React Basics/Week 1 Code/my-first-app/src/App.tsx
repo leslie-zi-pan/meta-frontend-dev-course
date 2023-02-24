@@ -15,7 +15,11 @@ const App = (props: AppProps) => {
       <header className="App-header">
         <Nav></Nav>
         <h1>{title}</h1>
-        <Intro1></Intro1>
+        <Intro1
+          introName="Leslie"
+          introAge={100}
+          programmingLanguage="React TS"
+        ></Intro1>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.

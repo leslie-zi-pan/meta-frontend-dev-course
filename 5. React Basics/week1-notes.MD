@@ -168,3 +168,27 @@ The components sending the props data is known as the parent and the receiving c
 ![Components must never modify its own props](assets/restricted-prop-modification.png "Components must never modify its own props")
 
 ## Dissecting Props
+
+Going back to the code transpiling example:
+
+![Code Transpiling Example](assets/code-transpiling.png "Code Transpiling Example")
+
+The `createElement` function receives three arguments:
+
+- Wrapping element to render
+- A null value
+  Inner content that will go inside the wrapping element
+
+The second argument can be replaced with an empty object. This object is referred to as the props object and is the main mechanism of sending data from a parent component to a child component in React.
+
+![Props Transpiling Example](assets/props-transpiled.png "Props Transpiling Example")
+
+## Introducing TSX
+
+TSX allows HTML to be written within TS code.
+
+![JSX Code Example](assets/jsx-code-example.png "JSX Code Example")
+
+JSX/TSX return statement must be wrapped in a top-level element such as a div tag.If you do not want extra div elements you can use fragments.
+
+![JSX Fragment](assets/jsx-fragment.png "JSX Fragment")
