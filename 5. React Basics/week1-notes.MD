@@ -192,3 +192,23 @@ TSX allows HTML to be written within TS code.
 JSX/TSX return statement must be wrapped in a top-level element such as a div tag.If you do not want extra div elements you can use fragments.
 
 ![JSX Fragment](assets/jsx-fragment.png "JSX Fragment")
+
+## Props And Children
+
+Remember you can pass props to a child component. React also passes in `props.children` automatically. 
+
+Here is an exmaple where you can use `props.children`. 
+``` tsx
+<Example>
+    Hello there
+</Example>
+```
+
+You can pass a Hello component with the message in as a props child: 
+
+```tsx
+<Example children={<Hello message="Hello there" />} />
+```
+
+Note in TSX you have to specify the FC type with children. 
+

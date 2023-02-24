@@ -10,9 +10,20 @@ import { AppProps } from "./types/types";
 const App = (props: AppProps) => {
   const { title } = props;
 
+  const appHeaderStyles: React.CSSProperties = {
+    backgroundColor: '#282c34',
+    minHeight: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: 'calc(10px + 2vmin)',
+    color: 'white',
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
+      <header style={appHeaderStyles} className="App-header">
         <Nav></Nav>
         <h1>{title}</h1>
         <Intro1
