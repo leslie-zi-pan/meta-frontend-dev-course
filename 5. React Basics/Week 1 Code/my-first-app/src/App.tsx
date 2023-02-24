@@ -6,6 +6,15 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Intro1 from "./components/Intro1";
 import { AppProps } from "./types/types";
+import Card from "./components/Card";
+
+const AppLogo = () => {
+  return (
+    <>
+      <img src={logo} className="App-logo" alt="logo" />
+    </>
+  )
+}
 
 const App = (props: AppProps) => {
   const { title } = props;
@@ -31,7 +40,7 @@ const App = (props: AppProps) => {
           introAge={100}
           programmingLanguage="React TS"
         ></Intro1>
-        <img src={logo} className="App-logo" alt="logo" />
+        <AppLogo></AppLogo>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -43,6 +52,7 @@ const App = (props: AppProps) => {
         >
           Learn React
         </a>
+        <Card h2={"First Card h2"} h3={"First card h3"}></Card>
         <ButtonClicker initNumber={0}></ButtonClicker>
         <Footer></Footer>
       </header>

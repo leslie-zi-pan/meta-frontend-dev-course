@@ -11,3 +11,8 @@ export type Intro1Props = {
   introAge: number;
   programmingLanguage: string;
 };
+
+export type CardProps = {
+  h2: string;
+  h3: string;
+}
