@@ -127,7 +127,7 @@ Refer to project `"5. React Basics/Week 1 Code/my-first-app"`. To view the code 
 
 ## Importing Components
 
-### Export statement
+### Export Statement
 
 Export statements help stand-alone units of code be reuseable.
 
@@ -144,7 +144,7 @@ There are two types of exports.
 
 Components are small piece of functionality like a button. Modules are larger than components and can be a series of components in the same file. This helps modular programming and compliments Reacts programming architecture.
 
-### Import statement
+### Import Statement
 
 Example import statement
 
@@ -154,3 +154,17 @@ import ReactDom from "react-dom/client";
 
 import App from "./App";
 ```
+
+## Principles Of Components: Props
+
+The components sending the props data is known as the parent and the receiving component is the child. Data can be sent to multiple components, however, this is a one directional data flow.
+
+![Parent Child Component Diagram](assets/parent-child-component.png "Parent Child Component Diagram")
+
+- Limitations
+  - One directional flow of data. Cannot send data back to parent component.
+  - Components must never modify its own props
+
+![Components must never modify its own props](assets/restricted-prop-modification.png "Components must never modify its own props")
+
+## Dissecting Props

@@ -5,9 +5,10 @@ import ButtonClicker from "./components/ButtonClicker";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Intro1 from "./components/Intro1";
+import { AppProps } from "./types/types";
 
-const App = () => {
-  let title = "Leslie's First React Application :)";
+const App = (props: AppProps) => {
+  const { title } = props;
 
   return (
     <div className="App">
